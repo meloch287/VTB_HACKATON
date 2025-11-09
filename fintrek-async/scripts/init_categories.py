@@ -7,8 +7,8 @@ import os
 # Добавить путь к приложению
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from fintrek_async.app.db.session import SessionLocal
-from fintrek_async.app.models.category import Category, CategoryType
+from app.db.session import SessionLocal
+from app.models.category import Category, CategoryType
 import uuid
 
 

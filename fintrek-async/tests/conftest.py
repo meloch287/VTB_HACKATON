@@ -7,9 +7,9 @@ from typing import AsyncGenerator
 from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 
-from fintrek_async.app.main import app
-from fintrek_async.app.db.session import get_db
-from fintrek_async.app.core.config import settings
+from app.main import app
+from app.db.session import get_db
+from app.core.config import settings
 
 # Тестовая база данных
 TEST_DATABASE_URL = settings.ASYNC_DATABASE_URL.replace("fintrek_db", "fintrek_test_db")
